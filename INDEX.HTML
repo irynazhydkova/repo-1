@@ -3,9 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV - Iryna Zhydkova</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: right;
+            margin-bottom: 20px
+        }
+        .header text {
+            margin-top: 10px;
+        }
+         .header img {
+            width: 150px; 
+            height: 200px; 
+            border: 50%;
+            margin-left: 200px;
+        }
+        .header h1 {
+            margin: 10px 0 5px;
+        }
+        .header h2 {
+            margin: 0;
+            color: #2fad44;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h3 {
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            color: #007acc;
+        }
+        .personal-info, .key-skills {
+            display: flex;
+            justify-content: space-between;
+        }
+        .personal-info div, .key-skills div {
+            width: 48%;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .profile p {
+            text-align: justify;
+        }
+        .work-experience, .education {
+            padding-left: 20px;
+        }
+        .work-experience p, .education p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <img src="photo/photo_2024-12-07_01-01-53.jpg" alt="Profile Picture">
+            <h1>Iryna Zhydkova</h1>
+            <h2>CUSTOMER SERVICE PHARMACIST</h2>
+        </div>
+
+        <div class="section profile">
+            <h3>PROFILE</h3>
+            <p>
+                Pharmacist with 5 years of experience in pharmacy in Ukraine, Belarus, and Dubai. Quickly adapt to new conditions and the team. I am communicable, always open to new ideas, stress-resistant, and purposeful.
+            </p>
+        </div>
+
+        <div class="section personal-info">
+            <div>
+                <h3>Personal Information</h3>
+                <p><strong>Nationality:</strong> Ukrainian</p>
+                <p><strong>Date of Birth:</strong> 28-11-1996</p>
+                <p><strong>Location:</strong> Dubai</p>
+                <p><strong>Languages:</strong> Russian – Native, Ukrainian – Native, English – Fluent</p>
+                <p><strong>Contacts:</strong> +971527915527, iryna.zhydkova@gmail.com</p>
+            </div>
+
+            <div>
+                <h3>Key Skills</h3>
+                <ul>
+                    <li>Quickly adapt to new people and conditions</li>
+                    <li>Make additional sales and recommend products</li>
+                    <li>Achieve tasks on time</li>
+                    <li>Focus on team and individual development</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section education">
+            <h3>EDUCATION</h3>
+            <p><strong>June 2015:</strong> College of the National University of Pharmacy, "Junior Specialist"</p>
+            <p><strong>January 2020:</strong> National University of Pharmacy, "Specialist"</p>
+        </div>
+
+        <div class="section work-experience">
+            <h3>WORK EXPERIENCE</h3>
+            <p><strong>February 2022 – Present:</strong> Emirates Airline</p>
+            <ul>
+                <li>Provided excellent customer service.</li>
+                <li>Promoted additional sales by cross-selling products.</li>
+            </ul>
+
+            <p><strong>November 2021 – February 2022:</strong> Aster DM Healthcare</p>
+            <ul>
+                <li>Assisted patients in medication dispensing.</li>
+                <li>Supported stock organization and sorting.</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
