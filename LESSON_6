@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Weather Forecast</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2f91c4;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #54bce9;
+            padding: 20px;
+            border: 5px solid #1b6f93;
+            border-radius: 10px;
+        }
+
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header span {
+            font-size: 18px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+        }
+
+        .box {
+            padding: 15px;
+            border: 2px solid white;
+            border-radius: 8px;
+            font-size: 16px;
+            position: relative;
+        }
+
+        .box span {
+            display: block;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .box:nth-child(1) { background-color: #84c3ed; }  /* Lisbon */
+        .box:nth-child(2) { background-color: #7ee0c4; }  /* Paris */
+        .box:nth-child(3) { background-color: #a99bcf; }  /* Belgrade */
+        .box:nth-child(4) { background-color: #e07d79; }  /* Venice */
+        .box:nth-child(5) { background-color: #fbc482; }  /* Tel-Aviv */
+        .box:nth-child(6) { background-color: #f6e588; }  /* Cairo */
+        .box:nth-child(7) { background-color: #a1d7b6; }  /* New York */
+        .box:nth-child(8) { background-color: #ee94a0; }  /* New Delhi */
+        .box:nth-child(9) { background-color: #eda0c8; }  /* San Francisco */
+        .box:nth-child(10) { background-color: #90c2a4; } /* Tokyo */
+        .box:nth-child(11) { background-color: #b6a3cb; } /* Sydney */
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            CSS Weather Forecast <span>☀️</span>
+        </div>
+
+        <div class="grid">
+            <div class="box">
+                Lisbon
+                <span>21°C ☀️</span>
+            </div>
+            <div class="box">
+                Paris
+                <span>11°C 🌧️</span>
+            </div>
+            <div class="box">
+                Belgrade
+                <span>15°C ☁️</span>
+            </div>
+            <div class="box">
+                Venice
+                <span>21°C 🌦️</span>
+            </div>
+            <div class="box">
+                Tel-Aviv
+                <span>32°C 🌡️</span>
+            </div>
+            <div class="box">
+                Cairo
+                <span>21°C ☀️</span>
+            </div>
+            <div class="box">
+                New-York
+                <span>17°C 🌧️</span>
+            </div>
+            <div class="box">
+                New-Delhi
+                <span>17°C ⛈️</span>
+            </div>
+            <div class="box">
+                San-Francisco
+                <span>15°C 🌤️</span>
+            </div>
+            <div class="box">
+                Tokyo
+                <span>8°C 🌙</span>
+            </div>
+            <div class="box">
+                Sydney
+                <span>25°C ☁️</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            Have a nice day and don’t forget your umbrella if you are in New Delhi now!
+        </div>
+    </div>
+</body>
+</html>
